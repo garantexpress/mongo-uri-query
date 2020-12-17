@@ -32,9 +32,15 @@ jobs:
     - name: Build
       run: go build -v ./...
     
+    - name: PWD
+      run: pwd
+    
     - name: Test & publish code coverage
       uses: paambaati/codeclimate-action@v2.7.5
+      env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
       with:
         coverageCommand: go test -coverprofile c.out ./...
         coverageLocations: |
           ${{github.workspace}}/*.lcov:lcov
+        debug: true
