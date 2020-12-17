@@ -42,5 +42,8 @@ jobs:
       env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
       with:
+        coverageCommand: |
+          go test -v -coverprofile c.out .
+          sed -i 's=github\.com/garantexpress/mongo-uri-query/==g' c.out
         coverageLocations: |
           ${{github.workspace}}/*.out:gcov
