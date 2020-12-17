@@ -34,16 +34,15 @@ jobs:
     
     - name: Test & prepare coverage
       run: |
-        go test -v -coverprofile c.out ./...
-        sed -i 's=github\.com/garantexpress/mongo-uri-query/==g' c.out
-    
+        go test -v -coverprofile c.out .
+        sed -i 's=^github.com/garantexpress/mongo-uri-query/==g' c.out
+        
+    - name: Get cc-test-reporter
+      run: |
+        curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+        chmod +x cc-test-reporter
+        
     - name: Publish code coverage
-      uses: paambaati/codeclimate-action@v2.7.5
       env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
-      with:
-        coverageCommand: |
-          go test -v -coverprofile c.out .
-          sed -i 's=github\.com/garantexpress/mongo-uri-query/==g' c.out
-        coverageLocations: |
-          ${{github.workspace}}/*.out:gcov
+      run: ./cc-test-reporter after-build -exit-code 0
