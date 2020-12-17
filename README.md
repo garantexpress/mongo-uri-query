@@ -1,7 +1,7 @@
 # URI to MongoDB Query
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/garantexpress/mongo-uri-query.svg)](https://pkg.go.dev/github.com/garantexpress/mongo-uri-query)
-[![Build Status](https://travis-ci.org/Denisss025/mongo-uri-query.svg?branch=master)](https://travis-ci.org/Denisss025/mongo-uri-query)
+[![Build Status](https://github.com/garantexpress/mongo-uri-query/workflows/Go/badge.svg)](https://github.com/garantexpress/mongo-uri-query/actions?query=workflow%3AGo)
 [![Go Report](https://goreportcard.com/badge/garantexpress/mongo-uri-query)](https://goreportcard.com/report/garantexpress/mongo-uri-query)
 [![Maintainability](https://api.codeclimate.com/v1/badges/be2fde656b7fbc1e5795/maintainability)](https://codeclimate.com/github/garantexpress/mongo-uri-query/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/be2fde656b7fbc1e5795/test_coverage)](https://codeclimate.com/github/garantexpress/mongo-uri-query/test_coverage)
