@@ -33,9 +33,10 @@ jobs:
       run: go build -v ./...
     
     - name: Test & prepare coverage
-      run: |
-        go test -v -coverprofile c.out .
-        sed -i 's=^github.com/garantexpress/mongo-uri-query/==g' c.out
+      run: go test -v -coverprofile c.out .
+        
+    - name: Fix coverage file
+      run: sed -i 's=^github.com/garantexpress/mongo-uri-query/==g' c.out
         
     - name: Get cc-test-reporter
       run: |
