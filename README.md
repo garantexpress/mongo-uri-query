@@ -1,11 +1,11 @@
 # URI to MongoDB Query
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/Denisss025/mongo-uri-query.svg)](https://pkg.go.dev/github.com/Denisss025/mongo-uri-query)
+[![Go Reference](https://pkg.go.dev/badge/github.com/garantexpress/mongo-uri-query.svg)](https://pkg.go.dev/github.com/garantexpress/mongo-uri-query)
 [![Build Status](https://travis-ci.org/Denisss025/mongo-uri-query.svg?branch=master)](https://travis-ci.org/Denisss025/mongo-uri-query)
-[![Go Report](https://goreportcard.com/badge/Denisss025/mongo-uri-query)](https://goreportcard.com/report/Denisss025/mongo-uri-query)
-[![Maintainability](https://api.codeclimate.com/v1/badges/be2fde656b7fbc1e5795/maintainability)](https://codeclimate.com/github/Denisss025/mongo-uri-query/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/5dcb97ef85e043fa0208/test_coverage)](https://codeclimate.com/github/Denisss025/mongo-uri-query/test_coverage)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Denisss025/mongo-uri-query/blob/master/LICENSE)
+[![Go Report](https://goreportcard.com/badge/garantexpress/mongo-uri-query)](https://goreportcard.com/report/garantexpress/mongo-uri-query)
+[![Maintainability](https://api.codeclimate.com/v1/badges/be2fde656b7fbc1e5795/maintainability)](https://codeclimate.com/github/garantexpress/mongo-uri-query/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/5dcb97ef85e043fa0208/test_coverage)](https://codeclimate.com/github/garantexpress/mongo-uri-query/test_coverage)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/garantexpress/mongo-uri-query/blob/master/LICENSE)
 
 The URI to MongoDB query conversion library for Go
 programming language    .
@@ -20,12 +20,12 @@ The recommended way to get started using the URI to MongoDB Query
 library is by using go modules to install the dependency in your
 project.
 This can be done by importing packages from
-`github.com/Denisss025/mongo-uri-query` and having the build step
+`github.com/garantexpress/mongo-uri-query` and having the build step
 to install the dependency.
 
 Another way is to get the library by explicitly running
 ```SH
-go get github.com/Denisss025/mongo-uri-query
+go get github.com/garantexpress/mongo-uri-query
 ```
 
 ## Usage
