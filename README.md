@@ -63,7 +63,7 @@ import (
 	"errors"
 	"net/http"
 
-	query "github.com/Denisss025/mongo-uri-query"
+	query "github.com/garantexpress/mongo-uri-query"
 
 	"gopkg.in/mgo.v2/bson"
 	"gopkg.in/mgo.v2/mgo"
@@ -130,7 +130,7 @@ import (
 	"errors"
 	"net/http"
 
-	query "github.com/Denisss025/mongo-uri-query"
+	query "github.com/garantexpress/mongo-uri-query"
 
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
@@ -247,5 +247,5 @@ The `Query{}` structure has `Filter`, `Sort`, `Limit` and `Skip` fields.
 ## License
 
 The URI to MongoDB Query library is licensed under the
-[MIT License](https://github.com/Denisss025/mongo-uri-query/blob/master/LICENCE).
+[MIT License](https://github.com/garantexpress/mongo-uri-query/blob/master/LICENCE).
 
